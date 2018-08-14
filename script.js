@@ -3,7 +3,7 @@
 
 
 
-const gcs = {
+/* const gcs = {
     eyes: [
         {
         // response: '4. Spontaneous',
@@ -18,7 +18,7 @@ const gcs = {
         spontaneous: 4,
         speech: 3,
         pain: 2,
-        no-response: 1
+        noResponse: 1
         },
         
         {
@@ -70,17 +70,59 @@ const gcs = {
             response: '1. no response',
         }
     ]
+}
+ */
 
-$(function () {
-    $('form').on('submit', function(event){
-        event.preventDefault();
-       console.log('hello');
-    }
 
-    const user-eye-response = $('input[name=eye-response]:checked').val();
-    const user-verb-response = $('input[name=verb-response]:checked').val();
-    const user-motor-response = $('input[name=motor-response]:checked').val();
+const userData = {
+    eye:'', 
+    verb:'',
+    motor:'',
+    total: ''
+}
+
+const total = (userData => {
+
+    userData.eye = parseInt(userData.eye);
+    userData.verb = parseInt(userData.verb);
+    userData.motor = parseInt(userData.motor);
+
+    sum = userData.eye + userData.verb + userData.motor;
+    return sum;
+});
+
+
+//hidden info is hidden
+//toggle the hidden info when a number is reached
+
+
+$('form').on('submit', function(event){
+    event.preventDefault();
+    //console.log('hello');
+    userData.eye = $('input[name=eye-response]:checked').val(); //names but changing value into checked items
+    userData.verb = $('input[name=verb-response]:checked').val();
+    userData.motor = $('input[name=motor-response]:checked').val();
     
-
+    userData.total = total(userData); 
     
+    console.log(total(userData));
+    console.log(userData)
 
+    $('.results').text(userData.total)
+
+});
+
+/* 
+$('.results').on('click', function(){
+   /*  let totalGCS = $(this).attr('') */
+  /*  $(this).text(userData.results)
+}); */
+
+
+
+
+
+/* let num = '';
+console.log(typeof num);
+var a = parseInt(num);
+ */
