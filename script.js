@@ -1,15 +1,20 @@
+//two ways of doing it
+//get the input in each behaviour
+
+
+
 const gcs = {
-    eyes: [
+    /*eyes: [
         {
-        /*  response: '4. Spontaneous', */
-        spontaneous: 4,
-        speech:3,
-        pain:2,
-        no response:1
+        / response: '4. Spontaneous', */
+        //spontaneous: 4,
+        //speech:3,
+        //pain:2,
+        //noresponse:1
 
         },
 
-        {
+      /*   {
         spontaneous: 4,
         speech: 3,
         pain: 2,
@@ -25,7 +30,7 @@ const gcs = {
         },
         {
             reponse: '1. no response',
-        } */
+        } 
     ],
 
     verbal: [
@@ -65,6 +70,13 @@ const gcs = {
         {
             response: '1. no response',
         }
-    ]
-};
+    ] */
+
 $(function () {
+    $('form').on('submit', function(event){
+        event.preventDefault();
+       console.log('hello');
+    }
+    
+
+    

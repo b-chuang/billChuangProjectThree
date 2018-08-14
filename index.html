@@ -16,16 +16,16 @@
                 <p>Eye Response</p>
 
                 <label for="spontaneous">spontaneous (+4)</label>
-                <input type="radio" name="response" id="spontaneous" value="spontaneous">
+                <input type="radio" name="eye-response" id="spontaneous" value="spontaneous">
 
                 <label for="voice-eyes">to voice (+3)</label>
-                <input type="radio" name="response" id="voice-eyes" value="voice-eyes">
+                <input type="radio" name="eye-response" id="voice-eyes" value="voice-eyes">
 
                 <label for="pain-eyes">to pain (+2)</label>
-                <input type="radio" name="response" id="pain-eyes" value="pain-eyes">
+                <input type="radio" name="eye-response" id="pain-eyes" value="pain-eyes">
 
                 <label for="nor-eyes">no response (+1)</label>
-                <input type="radio" name="response" id="nor-eyes" value="nor-eyes">
+                <input type="radio" name="eye-response" id="nor-eyes" value="nor-eyes">
                 
             </fieldset>
 
@@ -33,19 +33,19 @@
                 <p>Verbal Response</p>
             
                 <label for="oriented">oriented (+5)</label>
-                <input type="radio" name="response" id="oriented" value="oriented">
+                <input type="radio" name="verb-response" id="oriented" value="oriented">
 
                 <label for="confused">confused (+4)</label>
-                <input type="radio" name="response" id="confused" value="confused">
+                <input type="radio" name="verb-response" id="confused" value="confused">
             
                 <label for="inap-words">inappropriate words (+3)</label>
-                <input type="radio" name="response" id="inap-words" value="inap-words">
+                <input type="radio" name="verb-response" id="inap-words" value="inap-words">
             
                 <label for="incomp-sounds">incomprehensible sounds (+2)</label>
-                <input type="radio" name="response" id="incomp-sounds" value="incomp-sounds">
+                <input type="radio" name="verb-response" id="incomp-sounds" value="incomp-sounds">
             
                 <label for="nor-eyes">no response (+1)</label>
-                <input type="radio" name="response" id="nor-eyes" value="nor-eyes">
+                <input type="radio" name="verb-response" id="nor-eyes" value="nor-eyes">
             
             </fieldset>
 
@@ -53,27 +53,37 @@
                 <p>Motor Response</p>
             
                 <label for="obeys">obeys commands (+6)</label>
-                <input type="radio" name="response" id="obeys" value="obeys">
+                <input type="radio" name="motor-response" id="obeys" value="obeys">
             
                 <label for="localise">localises pain (+5)</label>
-                <input type="radio" name="response" id="localise" value="localise">
+                <input type="radio" name="motor-response" id="localise" value="localise">
             
                 <label for="withdraws">withdraws from pain (+4)</label>
-                <input type="radio" name="response" id="withdraws" value="withdraws">
+                <input type="radio" name="motor-response" id="withdraws" value="withdraws">
             
                 <label for="flexion">abnormal flexion (+3)</label>
-                <input type="radio" name="response" id="flexion" value="flexion">
+                <input type="radio" name="motor-response" id="flexion" value="flexion">
 
                 <label for="extension">abnormal extension (+2)</label>
-                <input type="radio" name="response" id="extension" value="extension">
+                <input type="radio" name="motor-response" id="extension" value="extension">
             
                 <label for="nor-eyes">no response (+1)</label>
-                <input type="radio" name="response" id="nor-eyes" value="nor-eyes">
+                <input type="radio" name="motor-response" id="nor-eyes" value="nor-eyes">
+
+                <div class="submit-container">
+                    <input type="submit" value="Get me the score">
+                </div>
             
             </fieldset>
+        </form>
+        <section class="results">
+            <!-- we want the result output here -->
+        </section>
 
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>
