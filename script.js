@@ -4,9 +4,9 @@
 
 
 const gcs = {
-    /*eyes: [
+    eyes: [
         {
-        / response: '4. Spontaneous', */
+        // response: '4. Spontaneous',
         //spontaneous: 4,
         //speech:3,
         //pain:2,
@@ -14,16 +14,15 @@ const gcs = {
 
         },
 
-      /*   {
+       {
         spontaneous: 4,
         speech: 3,
         pain: 2,
-        no response: 1
+        no-response: 1
         },
-     /*    {
+        
+        {
             reponse:'3. To speech',
-
-
         },
         {
             reponse: '2. To Pain',
@@ -70,13 +69,18 @@ const gcs = {
         {
             response: '1. no response',
         }
-    ] */
+    ]
 
 $(function () {
     $('form').on('submit', function(event){
         event.preventDefault();
        console.log('hello');
     }
+
+    const user-eye-response = $('input[name=eye-response]:checked').val();
+    const user-verb-response = $('input[name=verb-response]:checked').val();
+    const user-motor-response = $('input[name=motor-response]:checked').val();
     
 
     
+
