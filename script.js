@@ -107,22 +107,6 @@ $('form').on('submit', function(event){
     
     console.log(total(userData));
     console.log(userData)
-
+    
     $('.results').text(userData.total)
-
 });
-
-/* 
-$('.results').on('click', function(){
-   /*  let totalGCS = $(this).attr('') */
-  /*  $(this).text(userData.results)
-}); */
-
-
-
-
-
-/* let num = '';
-console.log(typeof num);
-var a = parseInt(num);
- */
