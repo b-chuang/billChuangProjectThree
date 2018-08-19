@@ -267,10 +267,23 @@ nav {
   /* background-color: #C7CFD9; */
   padding: 10px; }
 
+nav a {
+  color: black;
+  text-decoration: none;
+  /* text-transform: uppercase; */ }
+  nav a :hover {
+    opacity: 0.7; }
+
 .left-menu {
   grid-column: 1;
   -ms-flex-item-align: center;
   align-self: center; }
+  .left-menu a {
+    margin-left: 15px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: absolute; }
 
 .burger-menu {
   grid-column: 1;
@@ -298,25 +311,14 @@ nav {
     display: grid;
     grid-row: 2; } }
 
-nav a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase; }
-  nav a :hover {
-    opacity: 0.7; }
-
-.left-menu a {
-  padding: 10px 0;
-  margin-left: 15px;
-  font-size: 1.8rem;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  position: absolute; }
-
 footer {
   text-align: center;
   color: black;
   text-transform: uppercase; }
+
+footer a {
+  text-decoration: none;
+  color: black; }
 
 fieldset li {
   display: -webkit-box;
@@ -326,7 +328,8 @@ fieldset li {
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   text-align: right;
-  border-radius: 10px; }
+  border-radius: 10px;
+  padding: 2px; }
 
 label {
   cursor: pointer;
@@ -362,7 +365,7 @@ input[type='submit'] {
   -o-transition: all .3s ease-out;
   transition: all .3s ease-out;
   width: 220px;
-  padding: 15px; }
+  padding: 10px; }
 
 .results {
   border: 1px black solid;
