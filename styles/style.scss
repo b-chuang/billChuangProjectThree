@@ -60,6 +60,12 @@ form {
     
 }
 
+.wrapper-output {
+    margin: 0 auto;
+    width: 35%;
+    text-align: right;
+}
+
 
 
 .eyes {
@@ -81,7 +87,6 @@ form {
 }
 
 header {
-    border: 1px solid gray;
     border-radius: 10px;
     text-align: center;
     width:100%;
@@ -92,7 +97,6 @@ header {
 }
 
 .nav-container {
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -113,14 +117,13 @@ nav {
 .burger-menu {
     grid-column: 1;
     align-self: center;
-    margin-left: 2rem;
+    margin: 0 auto;
     width:10px;
     background-color: transparent;
 }
 
 .logo {
     grid-column: 2;
-    font-size: 1.4rem;
     padding: 1rem;
     font-weight: 500;
     margin: 0 auto;
@@ -182,7 +185,7 @@ label {
     text-align: right;
     padding: 5px 10px;
     border-radius: 3px;
-    width:240px;
+    width:200px;
 /*     border: 1px solid blue;
  */    background-color: #F1EFFF;
 }
@@ -230,4 +233,9 @@ input[type='submit'] {
     display: flex;
     flex-direction: column;
     width:100%;
+}
+
+.submit-container {
+    width: 35%;
+    margin: 0 auto;
 }
