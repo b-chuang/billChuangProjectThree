@@ -5,144 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 3</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <main>
-        <div class="wrapper">
-            <header>
-                <h1>GLASGOW COMA SCALE</h1>
-            </header>
-            
-            <form action="">
-                <fieldset class="eyes">
-                    <p>Eye Response</p>
-
-                    <!-- <input type="radio" class="temp-button visibility-hidden" id="warm" value="warm" name="temp">
-                    <label for="warm">warm</label>-->
-                <ul class ="labelFlex">
-                    <li>
-                    <label for="eye-response">spontaneous (+4)</label>
-                    <input type="radio" name="eye-response" id="spontaneous" value="4">
-                    </li>
-
-                    <li>
-                    <label for="voice-eyes">to voice (+3)</label>
-                    <input type="radio" name="eye-response" id="voice-eyes" value="3">
-                    </li>
-
-                    <li>
-                    <label for="pain-eyes">to pain (+2)</label>
-                    <input type="radio" name="eye-response" id="pain-eyes" value="2">
-                    </li>
-                    
-                    <li>
-                    <label for="nor-eyes">no response (+1)</label>
-                    <input type="radio" name="eye-response" id="nor-eyes" value="1">
-                    </li>
-                </ul>
-                </fieldset>
-
-                <fieldset class="verbal">
-                    <p>Verbal Response</p>
-                    
-                <ul class="labelFlex">
-                    <li>
-                    <label for="oriented">oriented (+5)</label>
-                    <input type="radio" name="verb-response" id="oriented" value="5">
-                    </li>
-
-                    <li>
-                    <label for="confused">confused (+4)</label>
-                    <input type="radio" name="verb-response" id="confused" value="4">
-                    </li>
-                
-                    <li>
-                    <label for="inap-words">inappropriate words (+3)</label>
-                    <input type="radio" name="verb-response" id="inap-words" value="3">
-                    </li>
-                
-                    <li>
-                    <label for="incomp-sounds">incomprehensible sounds (+2)</label>
-                    <input type="radio" name="verb-response" id="incomp-sounds" value="2">
-                    </li>
-
-                    <li>
-                    <label for="nor-eyes">no response (+1)</label>
-                    <input type="radio" name="verb-response" id="nor-eyes" value="1">
-                    </li>
-                </fieldset>
-                </ul>
-
-
-                <fieldset class="motor">
-                    <p>Motor Response</p>
-
-                <ul class="labelFlex">
-                    <li>
-                    <label for="obeys">obeys commands (+6)</label>
-                    <input type="radio" name="motor-response" id="obeys" value="6">
-                    </li>
-                
-                    <li>
-                    <label for="localise">localises pain (+5)</label>
-                    <input type="radio" name="motor-response" id="localise" value="5">
-                    </li>
-                    
-                    <li>
-                    <label for="withdraws">withdraws from pain (+4)</label>
-                    <input type="radio" name="motor-response" id="withdraws" value="4">
-                    </li>
-                    
-                    <li>
-                    <label for="flexion">abnormal flexion (+3)</label>
-                    <input type="radio" name="motor-response" id="flexion" value="3">
-                    </li>
-
-                    <li>
-                    <label for="extension">abnormal extension (+2)</label>
-                    <input type="radio" name="motor-response" id="extension" value="2">
-                    </li>
-                
-                    <li>
-                    <label for="nor-eyes">no response (+1)</label>
-                    <input type="radio" name="motor-response" id="nor-eyes" value="1">
-                    </li>
-
-                </ul>
-                </fieldset>
-
-                    <div class="submit-container">
-                        <input type="submit" value="Get me the score">
-                    </div>
-
-                    <!-- <div class="clear-button">
-                        <button>Clear Selection</button>
-                    </div> -->
-                
-                
-            </form>
-            <section class="results">
-                <!-- we want the result output here -->
-            </section>
-
-
-            <section class="action" id='result'>
-            <!--   <h1>PATIENT IS IN CRITICAL CONDITION</h1> // value 1-8 -->
-            </section>
-
-    <!--         <section class="action">
-                <h2>PATIENT IS IN MEDIUM LEVEL RISK</h2> //value 8-12
-            </section>
-
-            <section class="action">
-                <h3>PATIENT IS IN LOW LEVEL RISK</h3> //value 12-15
-            </section> -->
-
+        <div class="nav-container">
+            <nav>
+                <input type="checkbox" id="nav-toggle">
+                <label for="nav-toggle" class='burger-menu'>
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="left-menu">
+                    <a href="#" id="">About the GCS</a>
+                </div>
+                <div class="logo">
+                    <h1>GLASGOW COMA SCALE (GCS)</h1>
+                </header>
+            </nav>
         </div>
+        <div class="wrapper">
+            
+            <div class='wrapper-form'>
+                
+                
+                <form action="">
+                    <fieldset class="eyes">
+                        <p>Eye Response</p>
+
+                        <!-- <input type="radio" class="temp-button visibility-hidden" id="warm" value="warm" name="temp">
+                        <label for="warm">warm</label>-->
+                    <ul class ="labelFlex">
+                        <li>
+                        <label for="eye-response">spontaneous (+4)</label>
+                        <input type="radio" name="eye-response" id="spontaneous" value="4">
+                        </li>
+
+                        <li>
+                        <label for="voice-eyes">to voice (+3)</label>
+                        <input type="radio" name="eye-response" id="voice-eyes" value="3">
+                        </li>
+
+                        <li>
+                        <label for="pain-eyes">to pain (+2)</label>
+                        <input type="radio" name="eye-response" id="pain-eyes" value="2">
+                        </li>
+                        
+                        <li>
+                        <label for="nor-eyes">no response (+1)</label>
+                        <input type="radio" name="eye-response" id="nor-eyes" value="1">
+                        </li>
+                    </ul>
+                    </fieldset>
+
+                    <fieldset class="verbal">
+                        <p>Verbal Response</p>
+                        
+                    <ul class="labelFlex">
+                        <li>
+                        <label for="oriented">oriented (+5)</label>
+                        <input type="radio" name="verb-response" id="oriented" value="5">
+                        </li>
+
+                        <li>
+                        <label for="confused">confused (+4)</label>
+                        <input type="radio" name="verb-response" id="confused" value="4">
+                        </li>
+                    
+                        <li>
+                        <label for="inap-words">inappropriate words (+3)</label>
+                        <input type="radio" name="verb-response" id="inap-words" value="3">
+                        </li>
+                    
+                        <li>
+                        <label for="incomp-sounds">incomprehensible sounds (+2)</label>
+                        <input type="radio" name="verb-response" id="incomp-sounds" value="2">
+                        </li>
+
+                        <li>
+                        <label for="nor-eyes">no response (+1)</label>
+                        <input type="radio" name="verb-response" id="nor-eyes" value="1">
+                        </li>
+                    </fieldset>
+                    </ul>
+
+
+                    <fieldset class="motor">
+                        <p>Motor Response</p>
+
+                    <ul class="labelFlex">
+                        <li>
+                        <label for="obeys">obeys commands (+6)</label>
+                        <input type="radio" name="motor-response" id="obeys" value="6">
+                        </li>
+                    
+                        <li>
+                        <label for="localise">localises pain (+5)</label>
+                        <input type="radio" name="motor-response" id="localise" value="5">
+                        </li>
+                        
+                        <li>
+                        <label for="withdraws">withdraws from pain (+4)</label>
+                        <input type="radio" name="motor-response" id="withdraws" value="4">
+                        </li>
+                        
+                        <li>
+                        <label for="flexion">abnormal flexion (+3)</label>
+                        <input type="radio" name="motor-response" id="flexion" value="3">
+                        </li>
+
+                        <li>
+                        <label for="extension">abnormal extension (+2)</label>
+                        <input type="radio" name="motor-response" id="extension" value="2">
+                        </li>
+                    
+                        <li>
+                        <label for="nor-eyes">no response (+1)</label>
+                        <input type="radio" name="motor-response" id="nor-eyes" value="1">
+                        </li>
+
+                    </ul>
+                    </fieldset>
+
+                        <div class="submit-container">
+                            <input type="submit" value="Get me the score">
+                        </div>
+
+                        <!-- <div class="clear-button">
+                            <button>Clear Selection</button>
+                        </div> -->
+                    
+                    
+                </form>
+                <section class="results">
+                    <!-- we want the result output here -->
+                </section>
+
+
+                <section class="action" id='result'>
+                <!--   <h1>PATIENT IS IN CRITICAL CONDITION</h1> // value 1-8 -->
+                </section>
+
+        <!--         <section class="action">
+                    <h2>PATIENT IS IN MEDIUM LEVEL RISK</h2> //value 8-12
+                </section>
+
+                <section class="action">
+                    <h3>PATIENT IS IN LOW LEVEL RISK</h3> //value 12-15
+                </section> -->
+            </div>
+        </div>
+        <footer>
+            <h5>&copy; Bill Chuang</h5>
+        </footer>
+        
         
     </main>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="script.js"></script>
     

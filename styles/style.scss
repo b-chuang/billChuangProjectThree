@@ -8,7 +8,7 @@ main {
     height: 100vh;
     color: #000;
     .wrapper {
-        height: 100vh;
+        height:85vh;
     }
     &:before{
         @include sectionBackground('../assets/back-1.jpg');
@@ -23,15 +23,13 @@ main {
     }
 }
 
-.wrapper {
-    display: block;
-    margin: 0 auto;
-    width:80%;
-}
-
 fieldset {
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color:white;
 }
 
 label {
@@ -46,9 +44,22 @@ form {
     align-items: center;
 }
 
-fieldset {
-    align-content: center;
+
+.wrapper {
+    display: block;
+    margin: 0 auto;
+    width:80%;
+    border: 1px solid green;
 }
+
+.wrapper-form {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
 
 .eyes {
     display: flex;
@@ -66,4 +77,97 @@ fieldset {
 .labelFlex {
     display: flex;
     flex-direction: column;
+}
+
+header {
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    width:100%;
+    margin: 0 auto;
+    padding: 2%;
+
+
+}
+
+.nav-container {
+    border: 1px solid red;
+    width: 100%;
+}
+
+nav {
+    display: grid;
+    max-width: 1720px;
+    margin: 0 auto;
+    grid-template-columns: 1fr auto 1fr;
+    background-color: tomato;
+    padding:10px;
+}
+
+.left-menu {
+    grid-column: 1;
+    align-self: center;
+}
+
+.burger-menu {
+    grid-column: 1;
+    align-self: center;
+    margin-left: 2rem;
+}
+
+.logo {
+    grid-column: 2;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 800;
+    margin: 0 auto;
+}
+
+#nav-toggle, .burger-menu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .burger-menu{
+        display: inline-block;
+    }
+
+    .left-menu {
+        display: none;
+    }
+
+    #nav-toggle:checked ~ .left-menu {
+        display: grid;
+        grid-row: 2;
+    }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    :hover{
+        opacity: 0.7;
+    }
+}
+
+.left-menu a {
+    padding: 10px 0;
+    margin-left: 15px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+fieldset li {
+    
+    border: 1px solid blue;
+    text-align: right;
+    
 }
