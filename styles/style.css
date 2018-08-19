@@ -160,7 +160,7 @@ ul {
   list-style: none; }
 
 main {
-  position: relative;
+  /*  position: relative; */
   height: 100vh;
   color: #000; }
   main .wrapper {
@@ -219,8 +219,11 @@ form {
 
 .wrapper-output {
   margin: 0 auto;
+  /* padding:5%; */
   width: 35%;
-  text-align: right; }
+  text-align: right;
+  /*    margin-left: 36%;
+    margin-top: 10px; */ }
 
 .eyes {
   display: -webkit-box;
@@ -331,7 +334,7 @@ label {
   text-align: right;
   padding: 5px 10px;
   border-radius: 3px;
-  width: 200px;
+  width: 250px;
   /*     border: 1px solid blue;
  */
   background-color: #F1EFFF; }
@@ -359,16 +362,15 @@ input[type='submit'] {
   -o-transition: all .3s ease-out;
   transition: all .3s ease-out;
   width: 220px;
-  position: absolute;
   padding: 15px; }
 
 .results {
   border: 1px black solid;
-  width: 15%; }
+  width: 100%; }
 
 .action {
   border: 1px black solid;
-  width: 50%; }
+  width: 100%; }
 
 .submit-flex {
   display: -webkit-box;
@@ -378,8 +380,9 @@ input[type='submit'] {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 100%; }
+  width: 100%;
+  text-align: right; }
 
 .submit-container {
-  width: 35%;
+  text-align: right;
   margin: 0 auto; }
