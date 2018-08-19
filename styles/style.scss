@@ -8,7 +8,7 @@ main {
     height: 100vh;
     color: #000;
     .wrapper {
-        height:85vh;
+        height:87vh;
     }
     &:before{
         @include sectionBackground('../assets/back-1.jpg');
@@ -24,12 +24,14 @@ main {
 }
 
 fieldset {
-    width: 100%;
+    margin: 0 auto;
+    width: 35%;
     justify-content: space-between;
     align-content: center;
     border: 1px solid gray;
     border-radius: 10px;
     background-color:white;
+
 }
 
 label {
@@ -48,12 +50,11 @@ form {
 .wrapper {
     display: block;
     margin: 0 auto;
-    width:80%;
+    width:100%;
     border: 1px solid green;
 }
 
 .wrapper-form {
-    width: 60%;
     display: block;
     margin: 0 auto;
     
@@ -100,7 +101,7 @@ nav {
     max-width: 1720px;
     margin: 0 auto;
     grid-template-columns: 1fr auto 1fr;
-    background-color: tomato;
+    /* background-color: #C7CFD9; */
     padding:10px;
 }
 
@@ -113,13 +114,15 @@ nav {
     grid-column: 1;
     align-self: center;
     margin-left: 2rem;
+    width:10px;
+    background-color: transparent;
 }
 
 .logo {
     grid-column: 2;
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding: 1rem;
-    font-weight: 800;
+    font-weight: 500;
     margin: 0 auto;
 }
 
@@ -143,7 +146,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     :hover{
@@ -157,6 +160,7 @@ nav a {
     font-size: 1.8rem;
     font-weight: 300;
     letter-spacing: 0.5px;
+    position: absolute;
 }
 
 footer {
@@ -166,8 +170,64 @@ footer {
 }
 
 fieldset li {
-    
-    border: 1px solid blue;
+    display: flex;
+    flex: 0 1 auto;
     text-align: right;
-    
+    border-radius: 10px;
+}
+
+label {
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: right;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width:240px;
+/*     border: 1px solid blue;
+ */    background-color: #F1EFFF;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #F7FF82;
+    transition: 0.3s ease-out all;
+    width:100%;
+}
+
+
+/*  */
+
+input[type="radio"]{
+    visibility: hidden;
+    height: -1;
+    width: -1;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+    background-color: #403F39;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all .3s ease-out;
+    width: 220px;
+    position: absolute;
+    padding: 15px;
+
+}
+
+
+.results {
+    border: 1px black solid;
+    width: 15%;
+}
+
+.action {
+    border: 1px black solid;
+    width: 50%;
+}
+
+.submit-flex {
+    display: flex;
+    flex-direction: column;
+    width:100%;
 }
