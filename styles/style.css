@@ -167,7 +167,7 @@ main {
   height: 100vh;
   color: #000; }
   main .wrapper {
-    height: 87vh; }
+    margin: 0 auto; }
   main:before {
     background-image: url("../assets/back-1.jpg");
     background-position: center;
@@ -349,7 +349,7 @@ nav a {
 
 footer {
   margin-top: 20px;
-  text-align: left;
+  text-align: center;
   color: black;
   text-transform: uppercase; }
 
@@ -415,11 +415,6 @@ input[type='submit'] {
   border-top: none;
   border: 3px black solid; }
 
-/* action {
-    border-radius: 10px;
-    border: 3px black solid;
-    width: 100%
-} */
 .submit-flex {
   display: -webkit-box;
   display: -ms-flexbox;

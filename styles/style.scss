@@ -8,7 +8,7 @@ main {
     height: 100vh;
     color: #000;
     .wrapper {
-        height:87vh;
+        margin: 0 auto;
     }
     &:before{
         @include sectionBackground('../assets/back-1.jpg');
@@ -224,7 +224,7 @@ nav a {
 
 footer {
     margin-top:20px;
-    text-align: left;
+    text-align: center;
     color: black;
     text-transform: uppercase;
 }
@@ -292,12 +292,6 @@ input[type='submit'] {
     border-top: none;
     border: 3px black solid;
 }
-
-/* action {
-    border-radius: 10px;
-    border: 3px black solid;
-    width: 100%
-} */
 
 
 
