@@ -9,7 +9,6 @@ main {
     color: #000;
     .wrapper {
         margin: 0 auto;
-        height:90vh;
     }
     &:before{
         @include sectionBackground('../assets/back-1.jpg');
@@ -21,14 +20,15 @@ main {
         bottom: 0;
         left: 0;
         opacity: .6;
+
     }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     main::before {
         height:130%;
     }
-}
+} */
 
 
 
@@ -263,7 +263,7 @@ label {
 }
 
 input[type="radio"]:checked + label {
-    background-color: #F7FF82;
+    background-color: #FFD531;
     transition: 0.3s ease-out all;
     width:100%;
 }

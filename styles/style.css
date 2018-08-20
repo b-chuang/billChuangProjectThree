@@ -167,8 +167,7 @@ main {
   height: 100vh;
   color: #000; }
   main .wrapper {
-    margin: 0 auto;
-    height: 90vh; }
+    margin: 0 auto; }
   main:before {
     background-image: url("../assets/back-1.jpg");
     background-position: center;
@@ -182,10 +181,11 @@ main {
     left: 0;
     opacity: .6; }
 
-@media (max-width: 500px) {
-  main::before {
-    height: 130%; } }
-
+/* @media (max-width: 500px) {
+    main::before {
+        height:130%;
+    }
+} */
 fieldset {
   margin: 0 auto;
   width: 35%;
@@ -385,7 +385,7 @@ label {
   background-color: #F1EFFF; }
 
 input[type="radio"]:checked + label {
-  background-color: #F7FF82;
+  background-color: #FFD531;
   -webkit-transition: 0.3s ease-out all;
   -o-transition: 0.3s ease-out all;
   transition: 0.3s ease-out all;
