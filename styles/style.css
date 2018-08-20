@@ -184,7 +184,7 @@ main {
 
 @media (max-width: 500px) {
   main::before {
-    height: 122%; } }
+    height: 130%; } }
 
 fieldset {
   margin: 0 auto;
