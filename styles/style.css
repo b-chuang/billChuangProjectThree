@@ -168,7 +168,7 @@ main {
   color: #000; }
   main .wrapper {
     margin: 0 auto;
-    height: 100%; }
+    height: 90vh; }
   main:before {
     background-image: url("../assets/back-1.jpg");
     background-position: center;
@@ -181,6 +181,10 @@ main {
     bottom: 0;
     left: 0;
     opacity: .6; }
+
+@media (max-width: 500px) {
+  main::before {
+    height: 122%; } }
 
 fieldset {
   margin: 0 auto;
@@ -307,7 +311,7 @@ nav a {
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   /* text-transform: uppercase; */ }
-  nav a :hover {
+  nav a:hover {
     font-weight: 600;
     opacity: 0.7; }
 

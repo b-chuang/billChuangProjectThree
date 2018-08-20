@@ -6,13 +6,10 @@ const userData = {
 }
 
 const total = (userData) => {
-    // console.log(userData)
     userData.eye = parseInt(userData.eye);
     userData.verb = parseInt(userData.verb);
     userData.motor = parseInt(userData.motor);
-    // console.log(userData);
-    // userData.total = userData.eye + userData.verb + userData.motor;
-    // return sum;
+ 
     printToPage(userData);
 
 };
@@ -52,17 +49,8 @@ $('form').on('submit', function(event){
     
     total(userData); 
     
-    // console.log(total(userData));
-    // console.log(userData)
-    
-
-
-
     $('.results').html(`<h2 class="resultTotal"> ${userData.total} </h2>`)
 
-    
-
-   /*  $('form').trigger("reset"); */
 
 });
 
