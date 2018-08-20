@@ -9,6 +9,7 @@ main {
     color: #000;
     .wrapper {
         margin: 0 auto;
+        height:100%;
     }
     &:before{
         @include sectionBackground('../assets/back-1.jpg');

@@ -167,7 +167,8 @@ main {
   height: 100vh;
   color: #000; }
   main .wrapper {
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 100%; }
   main:before {
     background-image: url("../assets/back-1.jpg");
     background-position: center;
