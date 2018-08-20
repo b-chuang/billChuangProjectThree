@@ -11,7 +11,7 @@ main {
         margin: 0 auto;
     }
     &:before{
-        @include sectionBackground('../assets/back-1.jpg');
+        @include sectionBackground('../assets/back-3.png');
         content: '';
         position: absolute;
         z-index: -1;

@@ -169,7 +169,7 @@ main {
   main .wrapper {
     margin: 0 auto; }
   main:before {
-    background-image: url("../assets/back-1.jpg");
+    background-image: url("../assets/back-3.png");
     background-position: center;
     background-size: cover;
     content: '';
