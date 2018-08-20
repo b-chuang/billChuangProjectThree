@@ -38,7 +38,6 @@ const printToPage = (sum) => {
 }   
 }
 
-
 $('form').on('submit', function(event){
     event.preventDefault();
     userData.eye = $('input[name=eye-response]:checked').val(); 
@@ -57,6 +56,7 @@ $('form').on('submit', function(event){
 
 
 
+//pseudo notes
 //correct organisation
 //refresh clear
 

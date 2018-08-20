@@ -76,11 +76,15 @@ form {
     text-align: right;
     /* margin-left: 36%;
     margin-top: 10px; */
+    background:rgba(255, 255, 255, 0.5);
+
 }
 
 .wrapper-output h2 {
-    margin:2%;
+    padding:2%;
     font-size: 1.7rem;
+    text-shadow: 2px 2px 5px white;
+    
 }
 
 @media (max-width: 1000px) {
@@ -112,7 +116,7 @@ form {
 @media (max-width: 500px) {
     .wrapper-output {
         width:100%;
-        padding: 10px;
+        
     }
 
     .wrapper-output h2 {
@@ -209,6 +213,7 @@ nav a {
     padding: 1rem;
     font-weight: 500;
     margin: 0 auto;
+    text-shadow: 2px 2px 5px white;
 }
 
 #nav-toggle, .burger-menu {
@@ -294,6 +299,7 @@ input[type='submit'] {
     width: 100%;
     /* border-bottom: none; */
     margin: 0 auto;
+
 }
 
 #result {
@@ -301,7 +307,6 @@ input[type='submit'] {
     border-top: none;
     border: 3px black solid;
 }
-
 
 
 .submit-flex {
