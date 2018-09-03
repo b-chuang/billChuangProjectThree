@@ -142,6 +142,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
   border: 0; }
 
+/* @mixin sectionBackground($path) {
+    background-image: url($path);
+    background-position: center;
+    background-size: cover;
+} */
 html {
   font-size: 62.5%; }
 
@@ -162,24 +167,30 @@ ul {
 p {
   text-align: left; }
 
+body {
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url("../assets/back-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%; }
+
 main {
-  /*  position: relative; */
-  height: 100vh;
-  color: #000; }
+  /* &:before{
+        @include sectionBackground('../assets/back-3.png');
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: .6;
+ */ }
   main .wrapper {
-    margin: 0 auto; }
-  main:before {
-    background-image: url("../assets/back-3.png");
-    background-position: center;
-    background-size: cover;
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: .6; }
+    margin: 0 auto;
+    /*  position: relative; */
+    /* height: 100vh; */
+    /* color: #000; */ }
 
 /* @media (max-width: 500px) {
     main::before {
@@ -415,7 +426,10 @@ input[type='submit'] {
   border: 3px black solid;
   width: 100%;
   /* border-bottom: none; */
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out; }
 
 #result {
   width: 100%;

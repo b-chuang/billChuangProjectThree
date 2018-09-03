@@ -2,15 +2,23 @@
 @import "partials/_utils";
 @import "partials/_typography";
 
+body {
+    background-color: rgba(255,255,255, 0.2);
+    background-image: url('../assets/back-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100%;
+}
 
 main {
+
+.wrapper {
+    margin: 0 auto;
    /*  position: relative; */
-    height: 100vh;
-    color: #000;
-    .wrapper {
-        margin: 0 auto;
+    /* height: 100vh; */
+    /* color: #000; */
     }
-    &:before{
+    /* &:before{
         @include sectionBackground('../assets/back-3.png');
         content: '';
         position: absolute;
@@ -20,9 +28,9 @@ main {
         bottom: 0;
         left: 0;
         opacity: .6;
-
+ */
     }
-}
+
 
 /* @media (max-width: 500px) {
     main::before {
@@ -88,6 +96,7 @@ form {
 }
 
 @media (max-width: 1000px) {
+    
     .wrapper-output {
         width:42%;
     }
@@ -233,6 +242,7 @@ nav a {
         display: grid;
         grid-row: 2;
     }
+    
 }
 
 
@@ -299,6 +309,8 @@ input[type='submit'] {
     width: 100%;
     /* border-bottom: none; */
     margin: 0 auto;
+    transition: all 2s ease-out;
+
 
 }
 
